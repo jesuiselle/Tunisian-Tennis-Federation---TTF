@@ -1,5 +1,10 @@
 # Tunisian-Tennis-Federation---TTF
+
 Desktop application with JavaFX - Academic project
+
+Agile methodology scrum
+
+PhpMyAdmin
 
 Project composed of 5 members.
 
@@ -22,6 +27,8 @@ Tasks I did :
 * The actor can consult the list of matches.
 
 * Fan can consult gallery / video.
+
+* PS : put the directory ressources under your localhost.
 _________________________________________________________________
 
 This is some screenshots of this application
