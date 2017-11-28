@@ -28,7 +28,7 @@ Tasks I did :
 
 * Fan can consult gallery / video.
 
-* PS : put the directory ressources under your localhost.
+∴ PS : put the directory ressources under your localhost.
 _________________________________________________________________
 
 This is some screenshots of this application
