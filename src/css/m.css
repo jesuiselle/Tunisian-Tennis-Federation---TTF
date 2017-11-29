@@ -1,0 +1,81 @@
+.titled-pane 
+{
+
+    -fx-text-fill: #eaeae9;
+
+}
+
+.titled-pane:hover > .title 
+{
+
+-fx-color: #eaeae9;
+
+}
+
+.titled-pane:focused > .title 
+{
+
+-fx-color: #eaeae9;
+
+}
+
+.titled-pane:focused > 
+{
+
+ -fx-text-fill: #494851;
+
+}
+
+
+.titled-pane:hover 
+{
+    -fx-text-fill: #494851;
+}
+
+.button
+{
+
+-fx-background-color: #494851;
+
+}
+
+.button:hover
+{
+
+-fx-background-color: #01CDE6;
+
+}
+
+.button:focused >
+{
+
+-fx-background-color: #eaeae9;
+
+}
+
+.button:hover 
+{
+    -fx-text-fill: #494851;
+}
+
+#btn
+{
+
+-fx-background-color: #494851;
+
+}
+
+#btn:hover {
+ -fx-text-fill: #494851;
+}
+#btn:hover {
+-fx-background-color: #EAEAE9;
+}
+ 
+.menu {
+    -fx-background-color: #01CDE6;
+}
+ 
+.menu-item {
+    -fx-background-color: #01CDE6;
+}

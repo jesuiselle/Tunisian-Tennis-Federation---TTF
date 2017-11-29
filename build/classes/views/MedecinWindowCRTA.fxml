@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<SplitPane dividerPositions="0.47129909365558914" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="664.0" prefWidth="1065.0" style="-fx-background-color: #F9F9FA;" stylesheets="@../css/contenuMedecin2.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MedecinWindowCRTAController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="316.0" prefWidth="1063.0">
+         <children>
+            <GridPane layoutX="83.0" layoutY="99.0" prefHeight="101.0" prefWidth="739.0" AnchorPane.leftAnchor="83.0" AnchorPane.topAnchor="66.0">
+               <children>
+                  <Label text="Joueur :" />
+                  <Label text="Description : " GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin></Label>
+                  <Label text="Résultat :" GridPane.rowIndex="1" />
+                  <ChoiceBox fx:id="joueurCB" focusTraversable="false" prefWidth="150.0" GridPane.columnIndex="1" />
+                  <TextArea fx:id="descriptionTA" focusTraversable="false" prefHeight="37.0" prefWidth="197.0" promptText="Description..." GridPane.columnIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="-30.0" top="20.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <ChoiceBox fx:id="resultatCB" focusTraversable="false" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="138.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="153.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="153.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="0.0" prefWidth="113.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="200.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="33.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <HBox layoutX="83.0" layoutY="245.0" spacing="30.0">
+               <children>
+                  <Button focusTraversable="false" layoutX="83.0" layoutY="245.0" mnemonicParsing="false" onAction="#valider" prefHeight="31.0" prefWidth="113.0" text="Enregistrer">
+                     <graphic>
+                        <FontAwesomeIcon fill="#92c46d" iconName="CHECK" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Button focusTraversable="false" layoutX="231.0" layoutY="245.0" mnemonicParsing="false" onAction="#annuler" prefHeight="31.0" prefWidth="113.0" text="Annuler">
+                     <graphic>
+                        <FontAwesomeIcon fill="#fe3554" iconName="REMOVE" size="1.5em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView fx:id="clubImageView" fitHeight="120.0" fitWidth="160.0" layoutX="658.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView fx:id="medecinCRTableView" layoutX="45.0" layoutY="32.0" prefHeight="256.0" prefWidth="893.0">
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <columns>
+                  <TableColumn fx:id="joueurColumn" prefWidth="75.0" text="JOUEUR" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="75.0" text="DESCRIPTION" />
+                  <TableColumn fx:id="resultatColumn" prefWidth="75.0" text="RESULTAT" />
+                  <TableColumn fx:id="etatColumn" prefWidth="75.0" text="ETAT" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

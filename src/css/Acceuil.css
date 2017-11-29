@@ -1,0 +1,49 @@
+#btn 
+{
+
+ -fx-text-fill: white;
+
+}
+#btn:focused > 
+{
+
+ -fx-text-fill: #E1573F;
+
+}
+
+#btn:hover 
+{
+    -fx-text-fill: #E1573F;
+}
+
+#menu
+{
+
+-fx-background-color: transparent;
+-fx-text-fill: white;
+}
+
+
+#menu:hover
+{
+
+-fx-background-color: #263852;
+-fx-text-fill: #E1573F;
+}
+
+.button
+{
+
+-fx-background-color: transparent;
+-fx-text-fill:  #0076a3 ;
+}
+
+
+.button:hover
+{
+
+-fx-background-color: #0076a3;
+-fx-text-fill: white;
+}
+
+

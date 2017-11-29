@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="317.0" prefWidth="612.0" style="-fx-background-color: rgb(0,0,0, 0.9);" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff03" height="304.0" layoutX="7.0" layoutY="7.0" stroke="#f5eded" strokeType="INSIDE" width="600.0" />
+      <TableView layoutX="11.0" layoutY="47.0" prefHeight="226.0" prefWidth="593.0">
+        <columns>
+          <TableColumn prefWidth="210.0" text="Disponibilité" />
+            <TableColumn prefWidth="191.0" text="Liste des matchs" />
+            <TableColumn prefWidth="191.0" text="Compte rendu match" />
+        </columns>
+      </TableView>
+      <Text fill="#fcf8f8" layoutX="14.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ceci est un tableau qui contient l'emploi d'arbitre, liste de ses matchs  et ses comptes rendus" wrappingWidth="509.99999812236047" />
+      <ImageView fitHeight="48.0" fitWidth="36.0" layoutX="579.0" rotate="64.7">
+         <image>
+            <Image url="@../images/gps-localisation-aiguille-punaise-icone-3901-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

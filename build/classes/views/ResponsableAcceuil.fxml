@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-color: #EAEAE9;" stylesheets="@../css/espaceResponsable.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RspsbleWindowAcceuilController">
+   <bottom>
+      <HBox prefHeight="32.0" prefWidth="1380.0" style="-fx-background-color: #494851;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CopyRight TeamRise 2015-2016 © Fédération Tunisienne de Tennis" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="623.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="-20.0" right="-10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="32.0" prefWidth="1297.0" style="-fx-background-color: #D4B8AA;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar focusTraversable="false" prefHeight="32.0" prefWidth="1369.0" style="-fx-background-color: transparent;">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#acceuil" text="Acceuil" />
+                        <MenuItem mnemonicParsing="false" onAction="#deconnecter" text="Déconnecter" />
+                    </items>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="REORDER" size="1.4em" />
+                     </graphic>
+                  </Menu>
+               </menus>
+               <HBox.margin>
+                  <Insets right="-15.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="1330.0" />
+               </padding>
+            </MenuBar>
+         </children>
+         <BorderPane.margin>
+            <Insets right="-10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="617.0" prefWidth="301.0" style="-fx-background-color: #494851;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion>
+              <panes>
+                <TitledPane animated="false" focusTraversable="false" text="Compte rendu">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="125.0" prefWidth="299.0">
+                           <children>
+                              <VBox layoutX="-1.0">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" layoutY="2.0" mnemonicParsing="false" onAction="#publierClicked" prefHeight="25.0" prefWidth="300.0" text="Publier compte rendu">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="PAPER_PLANE" size="1.4em" />
+                                       </graphic>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <FontAwesomeIcon fill="#eaeae9" iconName="PAPERCLIP" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="-40.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

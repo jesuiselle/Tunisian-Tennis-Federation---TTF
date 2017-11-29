@@ -1,0 +1,98 @@
+.titled-pane 
+{
+
+    -fx-text-fill: #eaeae9;
+
+}
+
+.titled-pane 
+{
+
+    -fx-color: #2B2E3D;
+
+}
+
+.titled-pane:hover > .title 
+{
+
+-fx-color: #92C46D;
+
+}
+
+.titled-pane:focused > .title 
+{
+
+-fx-color: #92C46D;
+
+}
+
+.titled-pane:focused > 
+{
+
+ -fx-text-fill: #494851;
+
+}
+
+
+.titled-pane:hover 
+{
+    -fx-text-fill: #494851;
+}
+
+.button
+{
+
+-fx-background-color: #2B2E3D;
+
+}
+
+.button:hover
+{
+
+-fx-background-color:  #FE3554;
+
+}
+
+.button:focused > 
+{
+
+-fx-background-color: #FE3554;
+
+}
+
+.button:selecteds > 
+{
+
+-fx-background-color: #FE3554;
+
+}
+
+
+.button 
+{
+
+ -fx-text-fill: #9E9FA3;
+
+}
+
+
+.button:focused > 
+{
+
+ -fx-text-fill: #F9F9FA;
+
+}
+
+.button:hover 
+{
+    -fx-text-fill: #F9F9FA;
+}
+
+
+.menu {
+    -fx-background-color: #2B2E3D;
+}
+ 
+.menu-item {
+    -fx-background-color:#FE3554;
+}

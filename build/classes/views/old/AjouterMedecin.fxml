@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="667.0" stylesheets="@../css/m.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MedecinFormController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="408.0" prefWidth="670.0">
+         <center>
+            <GridPane prefHeight="172.0" prefWidth="644.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="180.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="113.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="182.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="203.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="14.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="169.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="13.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="1.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom:" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <VBox prefHeight="42.0" prefWidth="188.0" GridPane.columnIndex="3" GridPane.rowIndex="31" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="18.0" prefWidth="119.0" text="Confirmer" GridPane.columnIndex="1" GridPane.rowIndex="30" />
+                  <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="33.0" prefWidth="115.0" text="Annuler" GridPane.columnIndex="2" GridPane.rowIndex="30" />
+                  <TextField fx:id="NomMedecinfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="PrenomMedecinfield" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="LoginMedecinfield" prefHeight="19.0" prefWidth="117.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <PasswordField fx:id="PasseMedecinfield" prefHeight="37.0" prefWidth="170.0" GridPane.columnIndex="3" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" top="60.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <bottom>
+            <HBox id="h" prefHeight="17.0" prefWidth="670.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text id="t" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="© Copyright 2016. Designed by TEAMRISE" wrappingWidth="229.658203125">
+                     <HBox.margin>
+                        <Insets left="256.0" right="50.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox id="h" prefHeight="39.0" prefWidth="670.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#f5f0f0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter médecin" textAlignment="CENTER" wrappingWidth="256.33984375">
+                     <font>
+                        <Font name="Segoe UI" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="150.0" right="50.0" top="50.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fitHeight="139.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" rotate="20.9">
+                     <image>
+                        <Image url="@../images/picto-sante2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="-90.0" />
+                     </HBox.margin>
+                     <effect>
+                        <Lighting diffuseConstant="0.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

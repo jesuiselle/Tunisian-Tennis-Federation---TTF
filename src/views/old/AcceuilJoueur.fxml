@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/med.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AcceuilJoueurController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="612.0" layoutY="-1.0">
+         <image>
+            <Image url="@../images/Tennis-2.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="400.0" prefWidth="612.0" style="-fx-background-color: rgb(0,0,0, 0.9);" />
+      <MenuBar prefHeight="62.0" prefWidth="612.0" style="-fx-background-color: rgb(0,0,0, 0.3);">
+         <menus>
+            <Menu mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="49.0">
+                     <image>
+                        <Image url="@../images/LOGO.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Acceuil" />
+            <Menu mnemonicParsing="false" style="-fx-background-color: rgb(0,0,0, 0.3);" text="Profil">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Message" />
+                  <MenuItem mnemonicParsing="false" text="Paramétre" />
+                  <MenuItem mnemonicParsing="false" text="Plus d'information" />
+                  <MenuItem mnemonicParsing="false" text="Déconnecter" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Evénement" />
+         </menus>
+      </MenuBar>
+      <AnchorPane fx:id="ContentAnchor" layoutY="70.0" prefHeight="317.0" prefWidth="612.0" />
+   </children>
+</AnchorPane>

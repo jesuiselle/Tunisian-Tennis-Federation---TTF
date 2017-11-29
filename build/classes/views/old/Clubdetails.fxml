@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="667.0" stylesheets="@../css/m.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GestionClubController">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="408.0" prefWidth="670.0">
+         <top>
+            <MenuBar prefHeight="17.0" prefWidth="751.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Save as" />
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <GridPane prefHeight="344.0" prefWidth="436.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="179.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="130.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="169.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Label fx:id="nomClubLabelDetails" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="adresseClubLabelDetails" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <VBox prefHeight="114.0" prefWidth="125.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleModifier" prefHeight="33.0" prefWidth="123.0" text="Modifier..">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#handleSupprimer" text="Supprimer.." />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <Text fill="#2c0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Club détails" underline="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="26.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="-10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date fondation:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Image:" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Label fx:id="imageClubLabelDetails" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                     <children>
+                        <VBox prefHeight="118.0" prefWidth="196.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#showDetails" text="Historique.." />
+                              <Button mnemonicParsing="false" onAction="#handleAjout" prefHeight="33.0" prefWidth="122.0" text="Ajouter.." />
+                           </children>
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="65.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/CI7_WiiUDS_WiiSportsClub_FigureOnBase_Tennis_CMM_small%20(1).png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="125.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Label fx:id="dateClubLabelDetails" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ImageView fx:id="imageClubView" fitHeight="58.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <TableView fx:id="tableClubView" prefHeight="316.0" prefWidth="237.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="nomClubColumn" prefWidth="121.0" text="Nom" />
+                <TableColumn fx:id="adresseClubColumn" prefWidth="112.0" text="Adresse" />
+              </columns>
+            </TableView>
+         </left>
+         <bottom>
+            <HBox id="h" prefHeight="17.0" prefWidth="670.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text id="t" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="© TEAMRISE" wrappingWidth="77.658203125">
+                     <HBox.margin>
+                        <Insets left="300.0" right="50.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

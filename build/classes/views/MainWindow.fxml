@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-color: #EAEAE9;" styleClass="menu-bar" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainWindowController">
+   <bottom>
+      <HBox prefHeight="32.0" prefWidth="1380.0" style="-fx-background-color: #494851;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CopyRight TeamRise 2015-2016 © Fédération Tunisienne de Tennis" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="623.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Text>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="-25.0" right="-15.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="32.0" prefWidth="1297.0" style="-fx-background-color: #01CDE6;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="32.0" prefWidth="1369.0" style="-fx-background-color: transparent;" stylesheets="@../css/m.css">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="REORDER" size="1.4em" />
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#accueil" text="Acceuil" />
+                        <MenuItem mnemonicParsing="false" onAction="#deconnecter" text="Déconnecter" />
+                     </items>
+                  </Menu>
+               </menus>
+               <padding>
+                  <Insets left="1340.0" top="5.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></MenuBar>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets left="-5.0" right="-10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="617.0" prefWidth="301.0" style="-fx-background-color: #494851;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion fx:id="accordion" style="-fx-color: #494851;">
+              <panes>
+                <TitledPane fx:id="userTitledPane" animated="false" cacheShape="false" centerShape="false" expanded="false" focusTraversable="false" scaleShape="false" style="-fx-background-color: #494851;" stylesheets="@../css/m.css" text="Gestion des utilisateurs">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="125.0" prefWidth="299.0">
+                           <children>
+                              <VBox layoutX="-1.0" style="-fx-background-color: #494851;">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutY="2.0" mnemonicParsing="false" onAction="#arbitreClicked" prefHeight="25.0" prefWidth="300.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Arbitre">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="USER" />
+                                       </graphic>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutY="27.0" mnemonicParsing="false" onAction="#fanClicked" prefHeight="25.0" prefWidth="300.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Fan">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="USER" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutY="52.0" mnemonicParsing="false" onAction="#joueurClicked" prefHeight="25.0" prefWidth="301.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Joueur">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="USER" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutY="78.0" mnemonicParsing="false" onAction="#medecinClicked" prefHeight="25.0" prefWidth="300.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Medecin">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="USER" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutY="103.0" mnemonicParsing="false" onAction="#responsableClicked" prefHeight="25.0" prefWidth="300.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Responsable">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="USER" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <FontAwesomeIcon fill="#eaeae9" iconName="USERS" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                </TitledPane>
+                <TitledPane id="gestion" animated="false" focusTraversable="false" style="-fx-background-color: #494851;" stylesheets="@../css/m.css" text="Gestion des actualités" wrapText="true">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="75.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #494851;">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#actualiteClicked" prefHeight="25.0" prefWidth="306.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Actualités">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="FILE" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutX="42.0" layoutY="55.0" mnemonicParsing="false" onAction="#commentaireClicked" prefHeight="25.0" prefWidth="317.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Commentaires">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="COMMENTS" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutX="32.0" layoutY="78.0" mnemonicParsing="false" onAction="#mediaClicked" prefHeight="25.0" prefWidth="300.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Médias">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="FILE_VIDEO_ALT" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <FontAwesomeIcon fill="#eaeae9" iconName="FILES_ALT" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                </TitledPane>
+                <TitledPane id="gestion" animated="false" focusTraversable="false" style="-fx-background-color: #494851;" stylesheets="@../css/m.css" text="Gestion des compétitions">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="75.0" prefWidth="299.0">
+                           <children>
+                              <VBox layoutX="-1.0" style="-fx-background-color: #494851;">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutX="-1.0" layoutY="8.0" mnemonicParsing="false" onAction="#evenementClicked" prefHeight="25.0" prefWidth="301.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Evènement">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="CALENDAR" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#statisticClicked" prefHeight="25.0" prefWidth="301.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Statistic">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="LINE_CHART" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#matchClicked" prefHeight="25.0" prefWidth="300.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Match">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="CIRCLE_ALT" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <FontAwesomeIcon fill="#eaeae9" iconName="PIE_CHART" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                </TitledPane>
+                  <TitledPane id="gestion" animated="false" cacheShape="false" centerShape="false" focusTraversable="false" scaleShape="false" style="-fx-background-color: #494851;" stylesheets="@../css/m.css" text="Gestion des clubs">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="-1.0" style="-fx-background-color: #494851;">
+                                 <children>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutX="-1.0" mnemonicParsing="false" onAction="#clubClicked" prefHeight="25.0" prefWidth="301.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Club">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="SHIELD" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font></Button>
+                                    <Button alignment="BASELINE_LEFT" focusTraversable="false" layoutX="-1.0" layoutY="25.0" mnemonicParsing="false" onAction="#donClicked" prefHeight="25.0" prefWidth="301.0" style="-fx-text-fill: #EAEAE9;" stylesheets="@../css/m.css" text="Don">
+                                       <graphic>
+                                          <FontAwesomeIcon fill="#eaeae9" iconName="GIFT" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets left="40.0" />
+                                       </padding></Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <graphic>
+                        <FontAwesomeIcon fill="#eaeae9" iconName="SHIELD" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </TitledPane>
+              </panes>
+            </Accordion>
+            <Button id="btn" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#formationClicked" prefHeight="30.0" prefWidth="308.0" stylesheets="@../css/m.css" text="Formation" textFill="#eaeae9">
+               <graphic>
+                  <FontAwesomeIcon fill="#eaeae9" iconName="BOOK" size="1.4em" />
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Button id="btn" alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#stadeClicked" prefHeight="30.0" prefWidth="302.0" stylesheets="@../css/m.css" text="Stade" textFill="#eaeae9">
+               <graphic>
+                  <FontAwesomeIcon fill="#eaeae9" iconName="TH" size="1.4em" />
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="-40.0" left="-10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #EAEAE9;" stylesheets="@../css/m.css" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

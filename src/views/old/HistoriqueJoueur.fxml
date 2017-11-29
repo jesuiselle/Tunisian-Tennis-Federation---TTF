@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1406.0" stylesheets="@../css/m.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HistoriqueJoueurController">
+   <children>
+      <MenuBar prefHeight="35.0" prefWidth="1406.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Save as" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <ImageView fitHeight="314.0" fitWidth="319.0" layoutX="44.0" layoutY="89.0">
+         <image>
+            <Image url="@../images/1197090861274250421smerrell_Polaroid_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="joueurImageView" fitHeight="244.0" fitWidth="278.0" layoutX="68.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="423.0" layoutY="228.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date de naissance">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Taille">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Poids">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Club">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age groupe">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <ImageView layoutX="40.0" layoutY="59.0">
+         <image>
+            <Image url="@../images/gps-localisation-aiguille-punaise-icone-3901-48.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="777.0" layoutY="77.0" prefHeight="505.0" prefWidth="553.0" style="-fx-background-color: #f7f7f7;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#1e1e1e" height="172.22" radius="47.805" />
+         </effect>
+         <children>
+            <AnchorPane fx:id="participationPane" layoutY="24.0" prefHeight="229.0" prefWidth="554.0" />
+            <Text layoutX="1.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Participation" underline="true">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Label fx:id="nomJoueurLabel" layoutX="572.0" layoutY="228.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label fx:id="prenomJoueurLabel" layoutX="572.0" layoutY="269.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label fx:id="dateNaissanceJoueurLabel" layoutX="572.0" layoutY="317.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label fx:id="tailleJoueurLabel" layoutX="572.0" layoutY="350.0" prefHeight="25.0" prefWidth="89.0" />
+      <Label fx:id="poidsJoueurLabel" layoutX="572.0" layoutY="395.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label fx:id="categorieJoueurLabel" layoutX="572.0" layoutY="439.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label fx:id="clubJoueurLabel" layoutX="572.0" layoutY="480.0" prefHeight="21.0" prefWidth="89.0" />
+      <Label fx:id="groupeAgeJoueurLabel" layoutX="572.0" layoutY="527.0" prefHeight="25.0" prefWidth="89.0" />
+      
+   </children>
+</AnchorPane>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="parentAnchor" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../css/admin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+   <children>
+      <HBox id="bas" layoutX="-10.0" layoutY="724.0" prefHeight="23.0" prefWidth="1406.0">
+         <children>
+            <Text fill="#fcfafa" strokeType="OUTSIDE" strokeWidth="0.0" text="© Copyright 2016. Designed by TEAMRISE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="530.0" />
+               </HBox.margin>
+            </Text>
+         </children></HBox>
+      <AnchorPane id="contenu" fx:id="ContentAnchor" layoutX="-2.0" layoutY="121.0" prefHeight="620.0" prefWidth="1406.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="140.0" />
+      <HBox id="top" layoutY="720.0" prefHeight="5.0" prefWidth="1415.0" />
+      <HBox id="top" layoutY="100.0" prefHeight="5.0" prefWidth="1425.0" />
+      <MenuBar layoutX="-4.0" layoutY="60.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Profil">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#passwordClicked" text="Mot de passe">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/cle-mot-passe-icone-3743-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#deconnexionClicked" text="Déconnecter">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/sortir-session-icone-5274-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+            </items>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/assistant-icone-8653-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Message">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/message-icone-4867-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+          <Menu mnemonicParsing="false">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#joueurClicked" text="Gestion joueur">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/sport-raquet-icone-6194-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#medecinClicked" text="Gestion médecin">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/patron-utilisateur-icone-4961-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <Menu mnemonicParsing="false" text="Gestion arbitre">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#arbitreDetailClicked" text="Détails">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/modifier-profil-details-utilisateur-icone-9329-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Sessions formations">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/livre-icone-5878-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Concours mise à niveau">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/livre-icone-5468-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                    </items>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/crochet-icone-5126-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#responsableClicked" text="Gestion responsable">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/redacteur-en-chef-gconf-icone-5823-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#stadeClicked" text="Gestion stade">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/batiment-un-stade-icone-4237-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#competitionClicked" text="Gestion compétition">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/konversation-icone-9496-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <Menu mnemonicParsing="false" text="Match">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#matchClicked" text="Détails">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/modifier-profil-details-utilisateur-icone-9329-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                      <MenuItem mnemonicParsing="false" text="Amateur">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/sport-tennis-icone-4844-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" text="National">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/hd2-icone-3727-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#matchInternationalClicked" text="International">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/direction-icone-3776-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></MenuItem>
+                    </items>
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/groupe-icone-6034-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Gestion club">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/groupe-icone-4610-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#clubDetailsClicked" text="Détails">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/modifier-profil-details-utilisateur-icone-9329-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="Sessions internationales">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/direction-icone-3776-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#donClicked" text="Don">
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@../images/tennis-icone-5448-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#ticketClicked" text="Distrution tickets">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@../images/carte-credit-interrupteur-icone-5821-32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+            </items>
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../images/de-telechargement-gestionnaire-icone-8276-32.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="99.0" fitWidth="83.0" layoutX="1286.0">
+         <image>
+            <Image url="@../images/LOGO.png" />
+         </image>
+         <effect>
+            <DropShadow color="#0d0d0d" height="24.87" radius="69.4675" spread="0.19" width="255.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

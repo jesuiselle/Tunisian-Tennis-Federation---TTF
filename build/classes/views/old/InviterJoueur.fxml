@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="317.0" prefWidth="612.0" style="-fx-background-color: rgb(0,0,0, 0.9);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InvitationJoueurController">
+   <children>
+      <TableView layoutX="47.0" layoutY="34.0" prefHeight="191.0" prefWidth="525.0">
+        <columns>
+          <TableColumn prefWidth="250.0" text="C1" />
+          <TableColumn prefWidth="274.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="144.0" layoutY="244.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="157.0" stylesheets="@../css/m.css" text="Inviter" />
+      <Button layoutX="319.0" layoutY="244.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="157.0" stylesheets="@../css/m.css" text="Annuler" />
+      <Text fill="#fcf8f8" layoutX="71.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliquez sur invitez pour inviter, les joueurs choisissent aléatoirement par le systéme pour les tests " />
+   </children>
+</AnchorPane>

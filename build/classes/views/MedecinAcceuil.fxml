@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" style="-fx-background-color: #F9F9FA;" stylesheets="@../css/espaceMedecin.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MedecinAcceuilController">
+   <bottom>
+      <HBox prefHeight="32.0" prefWidth="1380.0" style="-fx-background-color: #2B2E3D;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="-25.0" right="-10.0" />
+         </BorderPane.margin>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CopyRight TeamRise 2015-2016 © Fédération Tunisienne de Tennis" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="623.0" top="5.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="32.0" prefWidth="1367.0" style="-fx-background-color: #2B2E3D;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="32.0" prefWidth="1367.0" style="-fx-background-color: transparent;">
+               <menus>
+                  <Menu mnemonicParsing="false">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" iconName="REORDER" size="1.4em" />
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#accueil" text="Acceuil" />
+                        <MenuItem mnemonicParsing="false" onAction="#deconnecter" text="Déconnecter" />
+                     </items>
+                  </Menu>
+               </menus>
+               <padding>
+                  <Insets left="1330.0" />
+               </padding></MenuBar>
+         </children>
+         <BorderPane.margin>
+            <Insets right="-10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="617.0" prefWidth="301.0" style="-fx-background-color: #2B2E3D; -fx-border-color: #2B2E3D;" BorderPane.alignment="CENTER">
+         <children>
+            <Accordion />
+            <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#compteRDTA" prefHeight="25.0" prefWidth="301.0" text="Compte rendu de test antidopage">
+               <graphic>
+                  <FontAwesomeIcon fill="#9e9fa3" iconName="CLIPBOARD" size="1.4em" />
+               </graphic>
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Button>
+            <Button alignment="BASELINE_LEFT" focusTraversable="false" mnemonicParsing="false" onAction="#invitationJTA" prefHeight="25.0" prefWidth="301.0" text="Inviter Joueur au test antidopage">
+               <graphic>
+                  <FontAwesomeIcon fill="#9e9fa3" iconName="SLIDESHARE" size="1.4em" />
+               </graphic>
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="-60.0" left="-5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

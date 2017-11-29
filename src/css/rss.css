@@ -1,0 +1,31 @@
+#rss {
+    -fx-background-color: transparent;
+	 
+}
+
+.menu .label{
+    -fx-text-fill: white;
+}
+
+.menu .label:focused 
+{
+    -fx-text-fill: white;
+	-fx-background-color: rgb(255,140,0, 0.3);
+}
+
+
+.context-menu {
+  -fx-background-color:  rgb(0,0,0, 0.3);
+  -fx-border-color:  rgb(0,0,0, 0.3);
+  -fx-text-fill: white;
+}
+
+.menu-item:focused {
+     -fx-background: -fx-accent;
+     -fx-background-color:  rgb(255,140,0, 0.3);
+     -fx-text-fill: -fx-selection-bar-text;
+}
+
+.menu-item:focused .label {
+  -fx-text-fill: white;
+}

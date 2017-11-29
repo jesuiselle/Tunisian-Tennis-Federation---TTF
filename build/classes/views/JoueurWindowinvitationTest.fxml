@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="590.0" prefWidth="1065.0" style="-fx-background-color: #EAEAE9;" stylesheets="@../css/contenuJoueur.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.JoueurWindowinvitationTestController">
+   <items>
+      <AnchorPane fx:id="contentPane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TableView fx:id="invitationRTATableView" layoutX="45.0" layoutY="65.0" prefHeight="518.0" prefWidth="1041.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="76.0">
+               
+               <columns>
+                  <TableColumn fx:id="medecinColumn" prefWidth="77.0" text="MEDECIN" />
+                  <TableColumn fx:id="dateinvitationColumn" prefWidth="369.0" text="DATE INVITATION" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Text layoutX="88.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelle(s) invitation test antidopage " AnchorPane.bottomAnchor="539.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="773.3203125" AnchorPane.topAnchor="32.0" />
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

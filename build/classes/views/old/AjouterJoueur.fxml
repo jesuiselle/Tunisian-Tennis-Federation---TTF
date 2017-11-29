@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" stylesheets="@../css/m.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.JoueurFormController">
+   <children>
+      <BorderPane layoutY="-1.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="163.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="113.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="177.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="177.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="169.0" minHeight="0.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="176.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="1.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" underline="true">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom:" underline="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe:" underline="true" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date de naissance:" underline="true" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Taille:" underline="true" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Label text="Label" GridPane.columnIndex="1" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <VBox prefHeight="42.0" prefWidth="188.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="18.0" prefWidth="119.0" text="Confirmer" />
+                        <Button mnemonicParsing="false" text="Annuler" />
+                     </children>
+                  </VBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login:" underline="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Poids" underline="true" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Score" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Groupe age:" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Image:" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Vivaldi Italic" size="23.0" />
+                     </font>
+                  </Text>
+                  <Label text="Label" GridPane.columnIndex="3" />
+                  <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <DatePicker prefHeight="31.0" prefWidth="111.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets bottom="-6.0" left="-6.0" right="-6.0" top="-6.0" />
+                     </padding>
+                  </DatePicker>
+                  <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="30.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <bottom>
+            <HBox id="h" BorderPane.alignment="CENTER">
+               <children>
+                  <Text id="t" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="© Copyright 2016. Designed by TEAMRISE" wrappingWidth="225.658203125">
+                     <HBox.margin>
+                        <Insets left="256.0" right="50.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox id="h" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#f5f0f0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter joueur " textAlignment="CENTER" wrappingWidth="256.33984375">
+                     <font>
+                        <Font name="Segoe UI" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="200.0" right="50.0" top="50.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/joueur.png" />
+                     </image>
+                     <effect>
+                        <DropShadow color="#f2ecec" height="255.0" radius="127.0" spread="0.88" width="255.0" />
+                     </effect>
+                  </ImageView>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

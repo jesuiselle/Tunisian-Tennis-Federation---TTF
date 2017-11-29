@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1406.0" stylesheets="@../css/m.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GestionMedecinController">
+   <children>
+      <TableView fx:id="medecinTableView" layoutX="245.0" layoutY="198.0" prefHeight="344.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="nomMedecinColumn" prefWidth="188.0" text="Nom" />
+          <TableColumn fx:id="prenomMedecinColumn" prefWidth="173.0" text="Prenom" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="641.0" layoutY="198.0" prefHeight="344.0" prefWidth="388.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="133.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="149.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="169.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Text>
+            <Label fx:id="nomMedecinLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="prenomMedecinLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login:">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="loginMedecinLabel" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutX="1071.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleModifier" prefHeight="33.0" prefWidth="116.0" text="Modifier" />
+      <Button layoutX="1071.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleAjout" prefHeight="33.0" prefWidth="116.0" text="Ajouter" />
+      <Button layoutX="1071.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleSupprimer" text="Supprimer" />
+      <ImageView fitHeight="632.0" fitWidth="201.0" layoutY="-6.0">
+         <image>
+            <Image url="@../images/centre-regina-medecine.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="432.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Médecin détails">
+         <font>
+            <Font name="Segoe UI" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="77.0" fitWidth="527.0" layoutX="201.0" layoutY="21.0">
+         <image>
+            <Image url="@../images/droppedImage_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+.root{
+	
+
+}
+
+.button {
+    -fx-border-color: #3b5998;
+  
+}
+
+#ident{
+-fx-font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  -fx-font-size: 25px;}
+#utilisateur{
+  -fx-padding: 10px;
+  -fx-border: solid 5px #c9c9c9;
+  -fx-box-shadow: inset 0 0 0 1px #707070;
+  -fx-transition: box-shadow 0.3s, border 0.3s;
+}
+#passe{
+  -fx-padding: 10px;
+  -fx-border: solid 5px #c9c9c9;
+  -fx-box-shadow: inset 0 0 0 1px #707070;
+  -fx-transition: box-shadow 0.3s, border 0.3s;
+}
+
+#connexion{
+	
+	            -fx-background: rgb(223, 117, 20); /* this is an orange */
+
+} 
+
+#t{
+	-fx-border-color:#fff;
+	-fx-background-color:#A4C400/*#3b5998/#616161*/;
+	
+}
+#r{
+	-fx-border-color:#fff;
+	-fx-background-color:#A4C400/*#8b9dc3/#78A419*/;
+	
+}
+#d{
+	
+	-fx-border-color:#fff;
+	-fx-background-color:#A4C400/*#dfe3ee/#9ccc65*/;
+	
+
+}
+#b{
+	-fx-border-color:#fff;
+	-fx-background-color:#A4C400/*#3b5998/#f7f7f7/ #616161*/;
+	
+}
+#imgadm{
+	-fx-alignment:center;
+}
+
+
+	
+		
+	
+
+	
+
+	

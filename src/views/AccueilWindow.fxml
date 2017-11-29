@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1366.0" stylesheets="@../css/Acceuil.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccueilController">
+   <children>
+      <VBox>
+         <children>
+            <HBox prefHeight="42.0" prefWidth="1366.0" style="-fx-background-color: #263852;">
+               <children>
+                  <Button id="btn" fx:id="btn" focusTraversable="false" mnemonicParsing="false" onAction="#connecterClicked" style="-fx-background-color: #263852;" text="Connecter" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="1260.0" top="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="-5.0" right="-10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="32.0" prefWidth="665.0" style="-fx-background-color: #263852;">
+               <children>
+                  <Button fx:id="menu" focusTraversable="false" mnemonicParsing="false" onAction="#news" text="News">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="CHILD" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#match" text="Matchs">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="SUPPORT" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#jacceuil" text="Joueurs">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="GROUP" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#tournoiAccueil" text="Tournoi">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="TROPHY" size="1.4em" text="" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#stade" text="Stade">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="MEDKIT" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#club" text="Club">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="MEDKIT" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#galerieAccueil" text="Galerie">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="IMAGE" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#video" text="Vidéo">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="FILM" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#testAcceuil" text="Test antidopage">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="MEDKIT" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="menu" mnemonicParsing="false" onAction="#contacter" text="Lieu">
+                     <graphic>
+                        <FontAwesomeIcon fill="#e1573f" iconName="GOOGLE" size="1.4em" />
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="-5.0" right="-10.0" />
+               </VBox.margin>
+            </HBox>
+            <AnchorPane fx:id="contentPane" prefHeight="610.0" prefWidth="1366.0" style="-fx-background-color: white;" />
+            <HBox prefHeight="25.0" prefWidth="1366.0" style="-fx-background-color: #263852;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="CopyRight TeamRise 2015-2016 © Fédération Tunisienne de Tennis" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="600.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="-10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="56.0" fitWidth="104.0" layoutX="1.0" layoutY="-3.0">
+         <image>
+            <Image url="@../images/tennis-rack.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e1573f" layoutX="57.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F.T.T" wrappingWidth="40.505859375">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="579.0" stylesheets="@../css/rss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccueilController">
+   <children>
+      <ImageView fitHeight="608.0" fitWidth="602.0">
+         <image>
+            <Image url="@../images/p.jpg" />
+         </image>
+         <effect>
+            <InnerShadow height="234.49" radius="58.1225" width="0.0" />
+         </effect>
+      </ImageView>
+      <MenuBar layoutY="-4.0" prefHeight="25.0" prefWidth="602.0" style="-fx-background-color: rgb(0,0,0, 0.3);">
+        <menus>
+            <Menu mnemonicParsing="false">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Connexion" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="54.0" fitWidth="49.0">
+                     <image>
+                        <Image url="@../images/LOGO.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+          <Menu mnemonicParsing="false" style="-fx-background-color: rgb(0,0,0, 0.3);" text="Acceuil">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Actualité">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="événement">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Joueur">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Match">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Newslettre" />
+            <Menu mnemonicParsing="false" text="Pronostique" />
+        </menus>
+      </MenuBar>
+      <AnchorPane id="rss" layoutX="379.0" layoutY="75.0" prefHeight="525.0" prefWidth="209.0" style="-fx-background-color: rgb(255,140,0, 0.3);">
+         <children>
+            <ImageView layoutX="173.0">
+               <image>
+                  <Image url="@../images/icon-rss.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="c" layoutX="7.0" layoutY="75.0" prefHeight="525.0" prefWidth="365.0" style="-fx-background-color: rgb(255,255,255, 0.3);">
+         <children>
+            <Text fill="#141313" layoutX="59.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenu à notre application TFT">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#0a0909" layoutX="54.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour permet d'être plus motivé, vous devez  être connecter à notre application avec un simple clic sur notre logo dans le bar en haut" wrappingWidth="247.94532003998756">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#070606" layoutX="1.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous pouvez aussi nous suivre sur facebook &gt;" wrappingWidth="340.2109375">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="324.0" layoutY="492.0">
+               <image>
+                  <Image url="@../images/facebook-logo-square-300x300.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

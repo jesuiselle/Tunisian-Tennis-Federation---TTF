@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="667.0" stylesheets="@../css/m.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="408.0" prefWidth="670.0">
+         <top>
+            <MenuBar prefHeight="17.0" prefWidth="751.0" BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" text="Save as" />
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <GridPane prefHeight="344.0" prefWidth="436.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="179.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="125.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="130.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="155.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="211.0" minHeight="0.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="169.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="287.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <VBox prefHeight="114.0" prefWidth="125.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="123.0" text="Modifier..">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Button>
+                        <Button mnemonicParsing="false" text="Supprimer.." />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" top="7.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <Text fill="#2c0101" strokeType="OUTSIDE" strokeWidth="0.0" text="Don matériaux détails" underline="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="26.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="-10.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <VBox prefHeight="118.0" prefWidth="196.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Historique.." />
+                              <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="122.0" text="Ajouter.." />
+                           </children>
+                           <padding>
+                              <Insets left="50.0" top="7.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="65.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/CI7_WiiUDS_WiiSportsClub_FigureOnBase_Tennis_CMM_small%20(1).png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="125.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </center>
+         <left>
+            <TableView prefHeight="356.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn prefWidth="212.0" text="Club" />
+              </columns>
+            </TableView>
+         </left>
+         <bottom>
+            <HBox id="h" prefHeight="17.0" prefWidth="670.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text id="t" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="© TEAMRISE" wrappingWidth="77.658203125">
+                     <HBox.margin>
+                        <Insets left="300.0" right="50.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
